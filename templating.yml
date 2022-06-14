@@ -9,9 +9,9 @@
 
     tasks:
         - name: ensure webserver package is present
-              apt:
-                  name: nginx
-                  state: present
+            apt:
+                name: nginx
+                state: present
 
         - name: Templating
             template: src={{ source_folder }}/index.j2 dest={{ dest_folder}}/index.html mode=0555
